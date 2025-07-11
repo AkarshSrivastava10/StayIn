@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="row offset-2 mt-2">
+    <h3>Sign up on Stayin</h3>
+    <div class="col-8 mt-2">
+        <form action="/signup" method="post" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input class="form-control" type="email" id="email" name="signup[email]" placeholder="Enter email" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid email</div>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input class="form-control" type="text" id="username" name="signup[username]" placeholder="Enter Username" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid username</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input class="form-control" type="password" id="password" name="signup[password]" placeholder="Enter Password" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Enter a valid password</div>
+            </div>
+            <!-- <div class="mb-4">
+                <label for="rePassword" class="form-label">Re-enter Password</label>
+                <input class="form-control" type="password" id="rePassword" name="signup[rePassword]" placeholder="Re-enter password" required>        
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please re-enter password</div>
+            </div> -->
+            
+            <button class="btn btn-dark mb-3 add-btn">Sign up</button>
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+<% layout("/layouts/boilerplate.ejs")%>
+    <body>
+        <div class="row offset-2 mt-4" >
+        <h3>Edit your listing</h3>
+            <div class="col-md-8 mt-4">
+        <form action="/listings/<%=singleData._id%>?_method=PUT" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="tittle" class="form-label">Tittle</label>
+                <input required type="text" name="listing[tittle]" value="<%=singleData.tittle%>" class="form-control">
+                <div class="invalid-feedback">Please enter a valid tittle name!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label> <br>
+                <textarea required name="listing[description]" class="form-control"><%=singleData.description%></textarea>
+                <div class="invalid-feedback">Please enter a short description!</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="uploadedImg" class="form-label">Uploaded Image</label> <br>
+                <img id="uploadedImg" src="<%=uploadedImg%>" alt="Uploaded image">
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" name="listing[image]" class="form-control">
+            </div>
+
+            <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input required type="number" name="listing[price]" value="<%=singleData.price%>" class="form-control">
+                <div class="invalid-feedback">Please enter a valid price!</div>
+            </div>
+            
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input required type="text" name="listing[country]" value="<%=singleData.country%>" class="form-control"> 
+                <div class="invalid-feedback">Please enter a valid country name!</div>
+            </div>
+        </div>
+            
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input required type="text" name="listing[location]" value="<%=singleData.location%>" class="form-control"> 
+                <div class="invalid-feedback">Please enter a valid location name!</div>
+            </div>
+            <button class="btn btn-dark edit-btn mb-3">Edit</button>
+        </div>
+    </form>
+    </div>
+    </body>

@@ -2,7 +2,7 @@
   "engines":{
     "node":"22.14.0"
   },
-  "name": "apna-college-major-peoject-(airbnb-clone)",
+  "name": "StayIn",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

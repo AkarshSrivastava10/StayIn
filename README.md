@@ -6,7 +6,10 @@ This project is created by AKARSH SRIVASTAVA
 The project is deployed and live!
 project link : https://stayin-jz7w.onrender.com/listing
 
-#AboutStayin 🏠
+#About
+
+Stayin 🏠
+
 Stayin is a full-stack web application for discovering and booking unique accommodations. It allows users to browse listings, add their own properties, and manage their stays.
 
 Tech Stack 🛠️
